@@ -1,0 +1,26 @@
+{
+  "name": "fulala-reel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render src/index.ts FulalaReel out/fulala-reel.mp4 --gl=angle --concurrency=1 --codec=h264 --crf=18 --pixel-format=yuv420p",
+    "still": "remotion still src/index.ts FulalaReel --frame=0 out/frame-0.png --gl=angle"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.0.0",
+    "@react-three/fiber": "^9.0.0",
+    "@remotion/three": "^4.0.419",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "^4.0.419",
+    "three": "^0.172.0"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^4.0.419",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.172.0",
+    "typescript": "^5"
+  }
+}
